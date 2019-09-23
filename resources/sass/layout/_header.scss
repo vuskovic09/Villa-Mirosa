@@ -1,3 +1,9 @@
 .header {
+  @include flex(flex, row, wrap, space-between, flex-start);
+  background-color: $color-primary;
+  padding: 0.75em 3em;
 
+  h1 {
+    color: $color-text;
+  }
 }
