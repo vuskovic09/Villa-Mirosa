@@ -1,14 +1,11 @@
 .navigation {
-  background-color: $color-secondary;
+
     &-list {
-    @include flex(flex, row, wrap, space-around, flex-start);
 
 		@include list-reset;
 
 		li {
-      a {
-        color: $color-text;
-      }
+
 		}
 
     }
