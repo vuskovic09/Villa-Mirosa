@@ -46,4 +46,4 @@ Thumbs.db
 *.zip
 
 # ignore dependency directories
-node_modules/
+#node_modules/
