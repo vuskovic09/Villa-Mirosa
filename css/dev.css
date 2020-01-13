@@ -1,0 +1,12 @@
+#navMenu {
+    padding-bottom: 10px;
+}
+
+.form-group {
+    width: auto !important;
+    padding: 15px !important;
+}
+
+.book-now-form .nice-select .option {
+    font-size: 14px;
+}
