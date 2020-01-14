@@ -163,46 +163,35 @@
                         <form action="#">
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select1">Datum dolaska</label>
-                                <select class="form-control" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                </select>
+                                <label for="start">Datum dolaska</label>
+                                <input class="form-control" type="date" id="start" name="trip-start" value="DD/MM/YY" min="2019-03-01" max="2020-12-31">
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select2">Datum odlaska</label>
-                                <select class="form-control" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
+                                <label for="end">Datum odlaska</label>
+                                <input class="form-control" type="date" id="end" name="trip-start" value="DD/MM/YY" min="2019-03-01" max="2020-12-31">
+                            </div>
+                            
+                            <!-- Form Group -->
+                            <div class="form-group">
+                                <label for="name">Ime i prezime</label>
+                                <input class="form-control" type="text" />
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select3">Tip Smještaja</label>
-                                <select class="form-control" id="select3">
+                                <label for="type">Tip Smještaja</label>
+                                <select class="form-control" id="type">
                                   <option>Polupansion</option>
                                   <option>Noćenje s doručkom</option>
                                 </select>
                             </div>
-
+                            
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="select4">Broj osoba</label>
-                                <select class="form-control" id="select4">
+                                <label for="peopleNum">Broj osoba</label>
+                                <select class="form-control" id="peopleNum">
                                   <option>1</option>
                                   <option>2</option>
                                   <option>3</option>
@@ -214,14 +203,25 @@
                                 </select>
                             </div>
 
+                            
+                            <div class="break"></div> <!-- break -->
+
                             <!-- Form Group -->
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <input type="textarea" />
+                                <label for="message">Poruka</label>
+                                <input id="message" class="form-control" type="textarea" />
+                            </div>
+
+                            <div class="break"></div><!-- break -->
+
+                            <!-- Form Group-->
+                            <div class="form-group">
+                                <label for="eMail">E-Mail</label>
+                                <input id="eMail" class="form-control" type="email" />
                             </div>
 
                             <!-- Button -->
-                            <button type="submit">Book Now</button>
+                            <button type="submit">Rezerviši</button>
                         </form>
                     </div>
                 </div>
@@ -239,14 +239,18 @@
                     <div class="about-text text-center mb-100">
                         <div class="section-heading text-center">
                             <div class="line-"></div>
-                            <h2>A place to remember</h2>
+                            <h2>O Nama</h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
-                        <div class="about-key-text">
+                        <p>Villa Mirosa nalazi se na jednom od najzelenijih i najljepših otoka u Hrvatskoj u malom mjestu Saplunara na otoku Mljetu. Smještena u blizini mora okružena borovom šumom čini pravi mali raj za ljubitelje netaknute prirode i kristalno čistog mora. U sklopu Ville su privatna kamena plaža i prekrasan bazen na morsku vodu s kojih se pruža nevjerojatan pogled na otvoreno more i Elafitsko otočje a na samo 5 minuta lagane šetnje nalaze se dvije pješčane plaže Mala i Velika Saplunara okružene borovom šumom.
+
+                        U prizemlju Ville nalazi se restoran gdje nudimo razna jela od ribe i mesa pridržavajući se tradicionalne dalmatinske kuhinje pripremajući ih na roštilju na drva ili ispod peke. Gosti pansiona za večeru imaju tri slijeda jela te mogu birati između mesnog, ribljeg i vegeterijanskog menija.
+                            
+                        Posebno se ponosimo kvalitetom namirnica nabavljenih isključivo na eko gospodarstvima a sami proizvodimo maslinovo ulje, vina i likere.</p>
+                        <!-- <div class="about-key-text">
                             <h6><span class="fa fa-check"></span> Donec malesuada lorem maximus mauris sceleri</h6>
                             <h6><span class="fa fa-check"></span> Malesuada lorem maximus mauris sceleri</h6>
                         </div>
-                        <a href="#" class="btn palatin-btn mt-50">Read More</a>
+                        <a href="#" class="btn palatin-btn mt-50">Read More</a> -->
                     </div>
                 </div>
 
@@ -279,32 +283,31 @@
                     <div class="pool-content text-center wow fadeInUp" data-wow-delay="300ms">
                         <div class="section-heading text-center white">
                             <div class="line-"></div>
-                            <h2>Infinity Pool</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p>
+                            <h2>Usluge</h2>
+                            <p>Villa posjeduje ukupno 8 soba prve kategorije. Sobe su jako prostrane i ugodne za boravak, klimatizirane s vlastitim kupaonicama, frižiderom, LCD Televizorom i satelitom. Također je svim gostima osiguran i parking.</p>
+                            <p>U sklopu Ville su vrhunski hidromasažni bazen (jacuzzi) i privatan prekrasan bazen na morsku vodu s kojih se pruža nevjerojatan pogled na otvoreno more i Elafitsko otočje.</p>
                         </div>
 
                         <div class="row">
                             <div class="col-12 col-sm-4">
                                 <div class="pool-feature">
                                     <i class="icon-cocktail-1"></i>
-                                    <p>Pool Beachbar</p>
+                                    <p>Domaće vino</p>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
                                 <div class="pool-feature">
                                     <i class="icon-swimming-pool"></i>
-                                    <p>Infinity Pool</p>
+                                    <p>Bazen</p>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
                                 <div class="pool-feature">
                                     <i class="icon-beach"></i>
-                                    <p>Sunbeds</p>
+                                    <p>Ležaljke</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Button -->
-                        <a href="#" class="btn palatin-btn mt-50">Read More</a>
                     </div>
                 </div>
             </div>
@@ -320,7 +323,7 @@
                     <div class="section-heading text-center">
                         <div class="line-"></div>
                         <h2>Smještaj</h2>
-                        <p>Vrste soba na raspolaganju</p>
+                        <p>Vrste soba na raspolaganju. Cijene su izražene po noći, po osobi.</p>
                     </div>
                 </div>
             </div>
@@ -333,15 +336,12 @@
                         <!-- Thumbnail -->
                         <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/1.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
+                        <p class="price-from">01.05-14.06.</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
-                            <h4>Deluxe Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
+                            <h4>59&euro;</h4>
                         </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
                     </div>
                 </div>
 
@@ -351,15 +351,12 @@
                         <!-- Thumbnail -->
                         <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $150/night</p>
+                        <p class="price-from">15.06-04.07.</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
-                            <h4>Double Suite</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
+                            <h4>65&euro;</h4>
                         </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
                     </div>
                 </div>
 
@@ -369,15 +366,42 @@
                         <!-- Thumbnail -->
                         <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
                         <!-- Price -->
-                        <p class="price-from">From $100/night</p>
+                        <p class="price-from">05.07-31.08.</p>
                         <!-- Rooms Text -->
                         <div class="rooms-text">
                             <div class="line"></div>
-                            <h4>Single Room</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque.</p>
+                            <h4>76&euro;</h4>
                         </div>
-                        <!-- Book Room -->
-                        <a href="#" class="book-room-btn btn palatin-btn">Book Room</a>
+                    </div>
+                </div>
+
+                 <!-- Single Rooms Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">01.09-14.09.</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>65&euro;</h4>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Single Rooms Area -->
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
+                        <!-- Price -->
+                        <p class="price-from">14.09-01.11.</p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>59&euro;</h4>
+                        </div>
                     </div>
                 </div>
 
