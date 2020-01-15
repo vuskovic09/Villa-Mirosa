@@ -11,6 +11,10 @@ input {
     padding-bottom: 10px;
 }
 
+.header-area .palatin-main-menu .classy-navbar .classynav ul li a {
+    font-size: 14px;
+}
+
 .book-now-form form .form-group, .book-now-form form button {
     flex: 30%;
     max-width: 100%;
