@@ -161,7 +161,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
                     <div class="book-now-form">
-                        <form action="#">
+                        <form method="POST" action="https://formspree.io/fvuskovic.biz@gmail.com">
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="start">Datum dolaska</label>
@@ -171,19 +171,19 @@
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="end">Datum odlaska</label>
-                                <input class="form-control" type="date" id="end" name="trip-start" value="DD/MM/YY" min="2019-03-01" max="2020-12-31">
+                                <input class="form-control" type="date" id="end" name="trip-end" value="DD/MM/YY" min="2019-03-01" max="2020-12-31">
                             </div>
                             
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="name">Ime i prezime</label>
-                                <input class="form-control" type="text" />
+                                <input class="form-control" type="text" name="full-name"/>
                             </div>
 
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="type">Tip Smještaja</label>
-                                <select class="form-control" id="type">
+                                <select class="form-control" id="type" name="type">
                                   <option>Polupansion</option>
                                   <option>Noćenje s doručkom</option>
                                 </select>
@@ -192,7 +192,7 @@
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="peopleNum">Broj osoba</label>
-                                <select class="form-control" id="peopleNum">
+                                <select class="form-control" id="peopleNum" name="number-of-people">
                                   <option>1</option>
                                   <option>2</option>
                                   <option>3</option>
@@ -210,7 +210,7 @@
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label for="message">Poruka</label>
-                                <input id="message" class="form-control" type="textarea" />
+                                <input id="message" class="form-control" type="textarea" name="message" />
                             </div>
 
                             <div class="break"></div><!-- break -->
@@ -218,7 +218,7 @@
                             <!-- Form Group-->
                             <div class="form-group">
                                 <label for="eMail">E-Mail</label>
-                                <input id="eMail" class="form-control" type="email" />
+                                <input id="eMail" class="form-control" type="email" name="e-mail" />
                             </div>
 
                             <!-- Button -->
@@ -422,7 +422,8 @@
                         <p>Za sve naše goste, po zahtjevu, možemo osigurati transfer gliserom između kopna i otoka Mljeta kao i transfere našim brendiranim kombijem. U slučaju da ste zainteresirani za ove usluge, molimo da ih napomenete u kontakt formi.</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-12">
+                <div class="col-lg-3"></div>
+                <div class="col-12 col-lg-6">
                     <div class="about-thumbnail homepage mb-100">
                         <!-- First Img -->
                         <div class="first-img wow fadeInUp" data-wow-delay="100ms">
