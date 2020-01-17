@@ -31,7 +31,7 @@ input {
 }
 
 .second-section {
-    display: flex !important;
+    display: flex;
 }
 
 .hidden {

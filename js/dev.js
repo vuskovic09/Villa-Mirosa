@@ -6,5 +6,6 @@ $(document).ready(function(){
     $("#tab--2").click(function(){
         $('.first-section').fadeOut(1500);
         $('.second-section').fadeIn(1500);
+        $('.second-section').css({'display': 'flex'});
     });
 });
