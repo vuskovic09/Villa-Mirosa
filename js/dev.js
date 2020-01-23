@@ -1,6 +1,11 @@
 $(document).ready(function(){
     $('.hidden').hide();
+
+    //NAV SCROLL
     
+    //NAV SCROLL-END
+
+    //PRICES
     $("#tab--1").click(function(){
         $('.second-section').fadeOut(1000);
         $('.first-section').fadeIn(1000);
@@ -9,4 +14,5 @@ $(document).ready(function(){
         $('.first-section').fadeOut(1000);
         $('.second-section').fadeIn(1000);
     });
+    //PRICES-END
 });
