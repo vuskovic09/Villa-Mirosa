@@ -2,7 +2,15 @@ $(document).ready(function(){
     $('.hidden').hide();
 
     //NAV SCROLL
-    
+  $('.link').click(function(event){
+  	event.preventDefault();
+      var target = $(this).attr('href');
+      console.log(target);
+
+    $('html, body').animate({
+      scrollTop: $("#" + target).offset().top - 1.25 * $('#header').height()
+    }, 500);
+   });   
     //NAV SCROLL-END
 
     //PRICES
