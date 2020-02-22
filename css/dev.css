@@ -7,6 +7,15 @@ input {
     width: 100px;
 }
 
+.lang-nav {
+    position: fixed;
+    left: 10%;
+}
+
+.lang-nav li {
+    display: inline-block;
+}
+
 #navMenu {
     padding-bottom: 10px;
 }
