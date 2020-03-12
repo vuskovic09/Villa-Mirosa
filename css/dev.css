@@ -8,13 +8,17 @@ input {
 }
 
 .lang-nav {
-    position: fixed;
-    left: 10%;
+    margin-left: 25px;
 }
 
 .lang-nav li {
     display: inline-block;
     margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.header-area .palatin-main-menu .classy-navbar .classynav .lang-nav li a:hover {
+    background-color: transparent;
 }
 
 #navMenu {
@@ -23,6 +27,9 @@ input {
 
 .header-area .palatin-main-menu .classy-navbar .classynav ul li a {
     font-size: 14px;
+}
+.book-now-form {
+    top: -50px;
 }
 
 .book-now-form form .form-group, .book-now-form form button {
@@ -42,4 +49,15 @@ input {
 
 .second-section {
     display: flex;
+}
+
+.single-rooms-area {
+    width: 90%;
+    height: 490px;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 80%;
+    }
 }
