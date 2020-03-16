@@ -7,6 +7,8 @@ input {
     width: 100px;
 }
 
+
+
 .lang-nav {
     margin-left: 25px;
 }
@@ -56,8 +58,11 @@ input {
     height: 490px;
 }
 
+#gallery {
+    margin-bottom: 25px;
+}
 @media (min-width: 1200px){
     .container {
-        max-width: 80%;
+        max-width: 80% !important;
     }
 }
